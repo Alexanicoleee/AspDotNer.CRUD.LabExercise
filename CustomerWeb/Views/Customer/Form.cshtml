@@ -4,6 +4,7 @@
     var action = ViewData["Action"];
 }
 
+<h5>@Html.ActionLink("Back", "Index")</h5>
     <h3>@action Customer</h3>
     <form asp-controller="customer" asp-action="save" method="post">
         @Html.Hidden("action",action)
@@ -58,6 +59,7 @@
                 <td>
                     <input type="submit" value="Save" />
                 </td>
+              
             </tr>
         </table>
     </form>
